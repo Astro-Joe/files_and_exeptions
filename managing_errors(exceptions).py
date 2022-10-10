@@ -1,11 +1,13 @@
 while True:
-    prompt = "Enetr a number: "
+    prompt = "Enter a number: "
+    number_ = input(prompt)
+    number1  = input(prompt)
+    
+   
     try:
-        number_ = int(input(prompt))
-        number1  = int(input(prompt))
-
-        solve = number1 - number_
+        solve = int(number1) / int(number_)
         print(solve)
+    except ZeroDivisionError:
+        print("You can't divide by zero!\n")
     except ValueError:
-        print("Enter a number!\n")
-    continue
+        print('Numbers! not letters!\n')
