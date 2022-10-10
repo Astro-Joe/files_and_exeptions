@@ -1,6 +1,8 @@
 import json
-
-
-numbers = [2, 3, 5, 7, 11, 13]
-with open('numbers.json','w') as file:
-    json.dump(numbers, file)
+#number = [3,4,5,6,7,8]
+filename = 'numbers.json'
+with open(filename) as file:
+    # json.dump(number, file)
+    number = json.load(file)
+print(number)
+#print(numbers)
